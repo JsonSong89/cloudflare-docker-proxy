@@ -13,22 +13,22 @@ TARGET_UPSTREAM = "https://registry-1.docker.io"
 [env.production]
 name = "cloudflare-docker-proxy"
 routes = [
-  { pattern = "docker.jsonsong.win", custom_domain = true },
-  { pattern = "quey.jsonsong.win", custom_domain = true },
-  { pattern = "gcr.jsonsong.win", custom_domain = true },
-  { pattern = "k8s-gcr.jsonsong.win", custom_domain = true },
-  { pattern = "k8s.jsonsong.win", custom_domain = true },
-  { pattern = "ghcr.jsonsong.win", custom_domain = true },
-  { pattern = "cloudsmith.jsonsong.win", custom_domain = true },
+  { pattern = "docker.jsonsong.top", custom_domain = true },
+  { pattern = "quey.jsonsong.top", custom_domain = true },
+  { pattern = "gcr.jsonsong.top", custom_domain = true },
+  { pattern = "k8s-gcr.jsonsong.top", custom_domain = true },
+  { pattern = "k8s.jsonsong.top", custom_domain = true },
+  { pattern = "ghcr.jsonsong.top", custom_domain = true },
+  { pattern = "cloudsmith.jsonsong.top", custom_domain = true },
 ]
 
 [env.production.vars]
 MODE = "production"
 TARGET_UPSTREAM = ""
 
-[env.staging]
-name = "cloudflare-docker-proxy-staging"
-route = { pattern = "docker-staging.jsonsong.win", custom_domain = true }
+#[env.staging]
+#name = "cloudflare-docker-proxy-staging"
+#route = { pattern = "docker-staging.jsonsong.top", custom_domain = true }
 
 [env.staging.vars]
 MODE = "staging"
