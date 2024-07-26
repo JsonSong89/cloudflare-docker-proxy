@@ -14,7 +14,7 @@ const routes = {
   "k8s.jsonsong.top": "https://registry.k8s.io",
   "ghcr.jsonsong.top": "https://ghcr.io",
   "cloudsmith.jsonsong.top": "https://docker.cloudsmith.io",
-
+   "cred.jsonsong.top": "https://docker.credclouds.com",
   // staging
   "docker-staging.jsonsong.top": dockerHub,
 };
