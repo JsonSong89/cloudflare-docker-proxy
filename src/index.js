@@ -15,7 +15,6 @@ const routes = {
     "ghcr.jsonsong.top": "https://ghcr.io",
     "cloudsmith.jsonsong.top": "https://docker.cloudsmith.io",
     "ecr.jsonsong.top": "https://public.ecr.aws",
-    "cred.jsonsong.top": "https://docker.credclouds.com",
 
     // staging
     "docker-staging.jsonsong.top": dockerHub,
