@@ -43,6 +43,11 @@ async function handleRequest(request) {
             }
         );
     }
+    //增加说明
+    if (url.pathname == "" || url.pathname === "/") {
+        return new Response("docker镜像代理:\n" + JSON.stringify(routes))
+    }
+
     const isDockerHub = upstream == dockerHub;
     const authorization = request.headers.get("Authorization");
     if (url.pathname == "/v2/") {
