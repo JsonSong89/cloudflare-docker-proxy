@@ -45,7 +45,9 @@ async function handleRequest(request) {
     }
     //增加说明
     if (url.pathname == "" || url.pathname === "/") {
-        return new Response("docker镜像代理:\n" + JSON.stringify(routes))
+        let bodyStr = "docker镜像代理:\n"
+        Object.keys(routes).forEach(key => bodyStr += `${routes[key]}  => ${key} \n`)
+        return new Response(bodyStr)
     }
 
     const isDockerHub = upstream == dockerHub;
