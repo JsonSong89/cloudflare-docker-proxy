@@ -20,6 +20,7 @@ routes = [
     { pattern = "k8s.jsonsong.top", custom_domain = true },
     { pattern = "ghcr.jsonsong.top", custom_domain = true },
     { pattern = "cloudsmith.jsonsong.top", custom_domain = true },
+    { pattern = "ecr.jsonsong.top", custom_domain = true },
 ]
 
 [env.production.vars]
