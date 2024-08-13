@@ -47,6 +47,7 @@ async function handleRequest(request) {
     if (url.pathname == "" || url.pathname === "/") {
         let bodyStr = "docker镜像代理:\n"
         Object.keys(routes).forEach(key => bodyStr += `${routes[key]}  => ${key} \n`)
+        bodyStr+="修改镜像名称到指定域名"
         return new Response(bodyStr)
     }
 
